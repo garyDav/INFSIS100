@@ -21,7 +21,9 @@ int main() {
   cout<<"Ingrese clave 1: ";
   cin>>xc1;
   cout<<"Ingrese clave 2: ";
-  cin>>xc2;
+  //cin>>xc2;
+  cin.ignore();
+  getline(cin, xc2);
   cout<<"Ingrese clave 3: ";
   cin>>xc3;
   cout<<"Ingrese clave 4: ";
@@ -31,9 +33,9 @@ int main() {
 
   //Comparaciones
   if(c1 == xc1 && c2 == xc2 && c3 == xc3 && c4 == xc4 && c5 == xc5)
-    cout<<"BIENVENIDO A LA FIESTA";
+    cout<<"BIENVENIDO A LA FIESTA"<<endl;
   else
-    cout<<"TE EQUIVOCASTE DE FIESTA";
+    cout<<"TE EQUIVOCASTE DE FIESTA"<<endl;
 
   return 0;
 }
